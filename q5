@@ -1,0 +1,12 @@
+def flatten_once(nested):
+    fl = []
+
+    for li in nested:
+        if isinstance(li, list):
+            
+            for subitem in li:
+                fl.append(subitem)
+        else:
+            fl.append(li)
+
+    return fl
