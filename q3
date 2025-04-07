@@ -1,0 +1,8 @@
+def extract_digits(s: str) -> list[int]:
+  nums = []
+
+  for char in s:
+    if char.isdigit():
+      nums.append(int(char))
+
+  return nums
