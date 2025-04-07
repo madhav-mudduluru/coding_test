@@ -1,0 +1,15 @@
+def top_k_frequent(nums, k):
+   
+    count = 0
+    for number in nums:
+        if number in count:
+            count[number] += 1
+        else:
+            count[number] = 1
+
+
+    pairs = []
+    for number in count:
+        pairs.append([number, count[number]])
+
+    return count
