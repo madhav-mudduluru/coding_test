@@ -1,0 +1,6 @@
+def sum_top_scores(data, subject, threshold):
+    return sum(
+        score for student in subject
+        if subject in data[student] and data[student][subject] >= threshold
+        for score in [data[student][subject]]
+    )
